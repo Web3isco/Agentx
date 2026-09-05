@@ -244,7 +244,7 @@ function Step1({
                       <span className="text-sm font-semibold text-foreground truncate">
                         {a.name}
                       </span>
-                      {a.verified && (
+                      {isOnchain && getAgentVerification(a.id).status === "verified" && (
                         <Shield size={11} className="text-success shrink-0" />
                       )}
                     </div>
