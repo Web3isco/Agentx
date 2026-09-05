@@ -76,6 +76,14 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} AGENTX. All rights reserved.
           </span>
           <div className="flex items-center gap-4">
+            <a
+              href="https://x.com/Agentx_bnb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted hover:text-foreground transition-colors"
+            >
+              X · @Agentx_bnb
+            </a>
             <span className="text-xs text-muted/50 cursor-default">Twitter</span>
             <span className="text-xs text-muted/50 cursor-default">Discord</span>
             <span className="text-xs text-muted/50 cursor-default">GitHub</span>
