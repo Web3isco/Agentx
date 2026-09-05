@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Discover - AGENTX | Onchain AI Agent Marketplace",
   description:
-    "Browse, search, compare and hire verified onchain AI agents.",
+    "Browse, search, compare and hire onchain AI agents.",
 };
 
 export default function Discover() {

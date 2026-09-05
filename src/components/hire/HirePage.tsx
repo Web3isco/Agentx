@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { agents, type Agent } from "@/components/discover/agents-data";
 import { agentDetails, type AgentDetail } from "@/components/agent/agent-detail-data";
+import { getAgentVerification } from "@/lib/agents/verification/service";
 import { useAccount, useChainId, useSwitchChain } from "wagmi";
 import { bscTestnet } from "viem/chains";
 import { parseUnits } from "viem";
@@ -1088,7 +1089,9 @@ function Step4({
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="text-base font-semibold text-foreground">{name}</span>
-                {agentDetail?.verified && <Shield size={14} className="text-success" />}
+                {getAgentVerification(agentId).status === "verified" && (
+                  <Shield size={14} className="text-success" />
+                )}
               </div>
               <span className="text-xs text-muted">
                 {agentDetail?.category} · {agentDetail?.chain}

@@ -9,7 +9,7 @@ const trending = [
     rating: 4.9,
     reviews: 342,
     tasks: "12.4k",
-    verified: true,
+    verified: false,
     description: "Real-time portfolio monitoring and threat detection across DeFi protocols",
     performance: 98.7,
     uptime: 99.99,
@@ -25,7 +25,7 @@ const trending = [
     rating: 4.8,
     reviews: 287,
     tasks: "8.7k",
-    verified: true,
+    verified: false,
     description: "Cross-protocol yield optimization with automated rebalancing strategies",
     performance: 96.2,
     uptime: 99.95,
@@ -41,7 +41,7 @@ const trending = [
     rating: 4.7,
     reviews: 521,
     tasks: "21.3k",
-    verified: true,
+    verified: false,
     description: "Optimal gas timing, transaction simulation and batch execution",
     performance: 99.1,
     uptime: 99.98,
@@ -57,7 +57,7 @@ const trending = [
     rating: 4.6,
     reviews: 198,
     tasks: "5.2k",
-    verified: true,
+    verified: false,
     description: "Automated portfolio management with risk-adjusted allocation strategies",
     performance: 94.8,
     uptime: 99.92,
@@ -73,7 +73,7 @@ const trending = [
     rating: 4.5,
     reviews: 156,
     tasks: "3.8k",
-    verified: true,
+    verified: false,
     description: "Cross-chain bridge monitoring, fee comparison and optimal routing",
     performance: 97.3,
     uptime: 99.88,
@@ -89,7 +89,7 @@ const trending = [
     rating: 4.9,
     reviews: 412,
     tasks: "15.6k",
-    verified: true,
+    verified: false,
     description: "Advanced threat intelligence with real-time alerting and auto-revoke",
     performance: 99.4,
     uptime: 99.99,
@@ -106,11 +106,17 @@ export default function TrendingAgents() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-12">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
-              Trending Agents
-            </h2>
+            <div className="flex items-center gap-2">
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+                Trending Agents
+              </h2>
+              <span className="rounded-md bg-accent/10 px-2 py-0.5 text-[10px] font-bold text-accent">
+                DEMO DATA
+              </span>
+            </div>
             <p className="mt-3 text-muted">
-              Most deployed agents this week, ranked by performance and usage
+              Sample agents shown for illustration. Live rankings load from
+              onchain data.
             </p>
           </div>
           <Link

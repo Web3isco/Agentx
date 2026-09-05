@@ -369,7 +369,7 @@ export default function DiscoverPage() {
               </h1>
               <p className="mt-2 text-sm text-muted">
                 {viewMode === "marketplace"
-                  ? `${filtered.length} curated agents across ${categories.length - 1} categories`
+                  ? `${filtered.length} curated demo agents across ${categories.length - 1} categories`
                   : `${onchainTotal.toLocaleString()} onchain agents from 8004scan.io`}
               </p>
             </div>
@@ -404,9 +404,8 @@ export default function DiscoverPage() {
           <div className="mb-6 flex items-start gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-xs text-amber-200">
             <AlertCircle size={15} className="shrink-0 mt-0.5" />
             <p>
-              The verified agent catalog is temporarily unreachable. Showing a
-              preview list while we reconnect — onchain agents and hiring stay
-              fully available.
+              The 8004scan agent catalog is temporarily unreachable. Showing a
+              marketplace preview while we reconnect.
             </p>
           </div>
         )}

@@ -32,7 +32,7 @@ export default function FinalCTA() {
             Ready to find your agent?
           </h2>
           <p className="mt-3 text-muted max-w-md mx-auto">
-            Deploy verified onchain AI agents through AGENTX.
+            Deploy onchain AI agents through AGENTX.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link

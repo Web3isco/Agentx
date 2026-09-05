@@ -898,8 +898,8 @@ export default function BenchmarkPage() {
             Agent Benchmark
           </h1>
           <p className="mt-2 text-sm text-muted max-w-lg">
-            Compare agent performance with real onchain data. All metrics are
-            calculated from execution records, not self-reported.
+            Compare agent performance with onchain data where available. Metrics
+            load from onchain records; demo entries are labeled sample.
           </p>
         </div>
 

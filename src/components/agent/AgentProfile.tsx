@@ -78,6 +78,18 @@ export default function AgentProfile({ agent }: { agent: AgentDetail }) {
           </Link>
         </div>
 
+        {!onchain && (
+          <div className="mb-6 flex items-start gap-2 rounded-xl border border-accent/30 bg-accent/10 px-4 py-3 text-xs text-accent">
+            <AlertTriangle size={15} className="shrink-0 mt-0.5" />
+            <p>
+              This is a demo agent from the marketplace preview. Its metrics,
+              verification state, and activity are simulated for illustration.
+              Real onchain agents load their genuine ERC-8004 data from
+              8004scan instead.
+            </p>
+          </div>
+        )}
+
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10">
           <div className="flex items-start gap-4">

@@ -5,7 +5,6 @@ const categories = [
   {
     name: "Security & Monitoring",
     description: "Protect wallets, detect threats, monitor positions",
-    agents: 124,
     icon: Shield,
     color: "#22c55e",
     filter: "Security",
@@ -13,7 +12,6 @@ const categories = [
   {
     name: "DeFi Optimization",
     description: "Yield farming, liquidity management, rebalancing",
-    agents: 89,
     icon: TrendingUp,
     color: "#3b82f6",
     filter: "DeFi",
@@ -21,7 +19,6 @@ const categories = [
   {
     name: "Analytics & Research",
     description: "Market analysis, onchain data, sentiment tracking",
-    agents: 156,
     icon: BarChart3,
     color: "#a855f7",
     filter: "Analytics",
@@ -29,7 +26,6 @@ const categories = [
   {
     name: "Portfolio Management",
     description: "Automated strategies, risk assessment, reporting",
-    agents: 67,
     icon: Wallet,
     color: "#f97316",
     filter: "Portfolio",
@@ -37,7 +33,6 @@ const categories = [
   {
     name: "Trading Execution",
     description: "MEV protection, limit orders, DCA automation",
-    agents: 93,
     icon: Zap,
     color: "#06b6d4",
     filter: "Trading",
@@ -45,7 +40,6 @@ const categories = [
   {
     name: "Compliance & Audit",
     description: "Transaction screening, regulatory checks, logging",
-    agents: 41,
     icon: Lock,
     color: "#ec4899",
     filter: "Compliance",
@@ -53,7 +47,6 @@ const categories = [
   {
     name: "Cross-Chain Operations",
     description: "Bridge monitoring, multi-chain portfolio views",
-    agents: 78,
     icon: Layers,
     color: "#8b5cf6",
     filter: "Cross-Chain",
@@ -61,7 +54,6 @@ const categories = [
   {
     name: "Search & Discovery",
     description: "Agent finding, comparison, recommendation engines",
-    agents: 52,
     icon: Search,
     color: "#14b8a6",
   },
@@ -76,8 +68,7 @@ export default function Categories() {
             Marketplace Categories
           </h2>
           <p className="mt-3 text-muted max-w-lg">
-            Browse agents organized by what they do. Every agent is verified onchain
-            before listing.
+            Browse agents organized by what they do.
           </p>
         </div>
 
@@ -95,9 +86,6 @@ export default function Categories() {
                 >
                   <cat.icon size={18} style={{ color: cat.color }} />
                 </div>
-                <span className="text-xs font-medium text-muted bg-background/50 rounded-md px-2 py-1">
-                  {cat.agents} agents
-                </span>
               </div>
               <h3 className="mt-4 text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
                 {cat.name}

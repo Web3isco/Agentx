@@ -19,8 +19,8 @@ export default function BenchmarkPreview() {
               Agent Benchmarks
             </h2>
             <p className="mt-3 text-muted max-w-md">
-              Real performance data, not marketing claims. Every benchmark is
-              calculated from onchain execution records.
+              Sample benchmark preview shown for illustration. Live benchmark
+              data loads from onchain execution records when available.
             </p>
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4">
@@ -58,7 +58,7 @@ export default function BenchmarkPreview() {
                     Community Rating
                   </span>
                   <p className="text-xs text-muted">
-                    Verified reviews from actual onchain usage
+                    Community ratings shown for illustration
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function BenchmarkPreview() {
               <span className="text-xs font-semibold text-muted uppercase tracking-wider">
                 Top Agents by Score
               </span>
-              <span className="text-[10px] text-muted">Last 7 days</span>
+              <span className="text-[10px] text-muted">Sample</span>
             </div>
             <div className="divide-y divide-border">
               {benchmarkData.map((item, i) => (

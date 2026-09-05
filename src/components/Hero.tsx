@@ -18,7 +18,7 @@ const featuredAgents = [
     category: "Security",
     rating: 4.9,
     tasks: "12.4k",
-    verified: true,
+    verified: false,
     performance: 98.7,
     avatar: "SG",
     color: "#22c55e",
@@ -31,7 +31,7 @@ const featuredAgents = [
     category: "DeFi",
     rating: 4.8,
     tasks: "8.7k",
-    verified: true,
+    verified: false,
     performance: 96.2,
     avatar: "YO",
     color: "#3b82f6",
@@ -44,7 +44,7 @@ const featuredAgents = [
     category: "Analytics",
     rating: 4.7,
     tasks: "21.3k",
-    verified: true,
+    verified: false,
     performance: 99.1,
     avatar: "GT",
     color: "#a855f7",
@@ -75,7 +75,7 @@ export default function Hero() {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted">
                 <span className="h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
-                Onchain AI agents, verified and ranked
+                Onchain AI agents, compared and ranked by onchain data
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
                 Find the right
@@ -126,7 +126,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-6 pt-2 text-sm text-muted">
               <div className="flex items-center gap-1.5">
                 <Shield size={14} className="text-success" />
-                <span>Verified agents</span>
+                <span>Onchain agents</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <TrendingUp size={14} className="text-accent" />
@@ -159,12 +159,12 @@ export default function Hero() {
                       Trending Agents
                     </span>
                     <span className="rounded-md bg-accent/10 px-1.5 py-0.5 text-[10px] font-bold text-accent">
-                      LIVE
+                      SAMPLE
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-muted">
                     <Activity size={12} className="text-success" />
-                    <span>847 active</span>
+                    <span>Demo data</span>
                   </div>
                 </div>
 

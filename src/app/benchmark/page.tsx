@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Benchmark - AGENTX | Onchain AI Agent Marketplace",
   description:
-    "Compare agent performance with real onchain data. Metrics, speed, cost, and rankings.",
+    "Compare agent performance with onchain data where available. Metrics, speed, cost, and rankings.",
 };
 
 export default function Benchmark() {

@@ -6,28 +6,28 @@ const steps = [
     icon: Search,
     title: "Search & Discover",
     description:
-      "Tell AGENTX what you need. Our search understands intent, not just keywords. Browse verified agents matched to your use case.",
+      "Tell AGENTX what you need. Our search understands intent, not just keywords. Browse agents matched to your use case.",
   },
   {
     step: "02",
     icon: Shield,
     title: "Verify & Compare",
     description:
-      "Every agent shows onchain performance data, audit status, and real user reviews. Compare side-by-side before you commit.",
+      "Agents surface their verification status, onchain data where available, and reviews. Compare side-by-side before you commit.",
   },
   {
     step: "03",
     icon: Zap,
     title: "Deploy & Run",
     description:
-      "Connect your wallet and deploy the agent in one transaction. No off-chain setup, no API keys, no中间人. Pure onchain execution.",
+      "Connect your wallet and deploy the agent in one transaction. Permissions and onchain execution are explicit and transparent.",
   },
   {
     step: "04",
     icon: BarChart3,
     title: "Monitor & Optimize",
     description:
-      "Track performance in real-time. AGENTX benchmarks your agents against the market so you always know if you have the best.",
+      "Track performance over time. AGENTX benchmarks agents so you can compare and adjust your stack.",
   },
 ];
 
@@ -40,8 +40,7 @@ export default function HowItWorks() {
             How AGENTX Works
           </h2>
           <p className="mt-3 text-muted max-w-lg">
-            From search to deployment in four steps. Every interaction is onchain
-            and transparent.
+            From search to deployment in four steps.
           </p>
         </div>
 

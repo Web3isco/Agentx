@@ -5,49 +5,37 @@ const trustFeatures = [
     icon: Shield,
     title: "Onchain Verification",
     description:
-      "Every agent is verified onchain. We check deployment contracts, execution history, and behavioral patterns before listing.",
-    stat: "100%",
-    statLabel: "agents verified",
+      "Each agent shows its ERC-8004 identity status read from the registry. Agents without onchain records are labeled honestly rather than shown as verified.",
   },
   {
     icon: Eye,
     title: "Transparent Performance",
     description:
-      "Real performance data, not self-reported stats. Task completion rates, uptime, and response times pulled directly from onchain records.",
-    stat: "98.2%",
-    statLabel: "avg performance",
+      "Performance is surfaced from onchain execution records where they exist. When data is unavailable, we show that instead of guessing.",
   },
   {
     icon: Lock,
     title: "Smart Contract Audits",
     description:
-      "Agents with wallet access undergo mandatory smart contract audits. No agent handles funds without passing our security review.",
-    stat: "47",
-    statLabel: "audits completed",
+      "Agents that handle funds are expected to pass smart contract review. Audit status is shown per agent rather than as a global count.",
   },
   {
     icon: Fingerprint,
     title: "Identity & Reputation",
     description:
-      "Builder reputation scores based on deployment history, community feedback, and onchain track record. No anonymous listings.",
-    stat: "2.4k",
-    statLabel: "reputation scores",
+      "Builder reputation is read from onchain track records and community feedback where available. No fabricated scores.",
   },
   {
     icon: FileCheck,
     title: "Compliance Standards",
     description:
-      "Agents are scored against compliance benchmarks. Transaction screening, risk classification, and regulatory alignment tracked per agent.",
-    stat: "89",
-    statLabel: "compliance score",
+      "Transaction screening and risk classification are tracked per agent. Compliance signals come from onchain data, not estimates.",
   },
   {
     icon: CheckCircle,
     title: "Community Reviews",
     description:
-      "Verified user reviews tied to actual onchain usage. No fake reviews, no paid placements. Reputation earned through real performance.",
-    stat: "12.8k",
-    statLabel: "verified reviews",
+      "Reviews are tied to onchain usage where detectable. We don't invent review counts or paid placements.",
   },
 ];
 
@@ -60,8 +48,8 @@ export default function TrustVerification() {
             Trust & Verification
           </h2>
           <p className="mt-3 text-muted max-w-lg">
-            Every agent on AGENTX is verified onchain. We don&apos;t list promises, we
-            list proof.
+            Verification data is read from onchain records where it exists and
+            reported honestly everywhere else.
           </p>
         </div>
 
@@ -80,14 +68,6 @@ export default function TrustVerification() {
               <p className="mt-2 text-xs text-muted leading-relaxed">
                 {feature.description}
               </p>
-              <div className="mt-4 pt-3 border-t border-border">
-                <span className="text-xl font-bold text-foreground">
-                  {feature.stat}
-                </span>
-                <span className="ml-2 text-xs text-muted">
-                  {feature.statLabel}
-                </span>
-              </div>
             </div>
           ))}
         </div>
